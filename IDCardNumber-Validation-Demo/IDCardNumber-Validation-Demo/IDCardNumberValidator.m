@@ -19,14 +19,17 @@
     NSArray *proviceCodes = @[@"11", @"12", @"13", @"14", @"15",
                               @"21", @"22", @"23",
                               @"31", @"32", @"33", @"34", @"35", @"36", @"37",
-                              @"41", @"42", @"43", @"44",@"45", @"46",
-                              @"50", @"51", @"52", @"53",@"54",
+                              @"41", @"42", @"43", @"44", @"45", @"46",
+                              @"50", @"51", @"52", @"53", @"54",
                               @"61", @"62", @"63", @"64", @"65",
                               @"71", @"81", @"82", @"91"];
     if (![proviceCodes containsObject:provinceCode]) return NO;
     
-    return [self validate15DigitsIDCardNumber:idNumber]
-    || [self validate18DigitsIDCardNumber:idNumber];
+    if (idNumber.length == 15) {
+        return [self validate15DigitsIDCardNumber:idNumber];
+    } else {
+        return [self validate18DigitsIDCardNumber:idNumber];
+    }
 }
 
 #pragma mark Helpers
@@ -58,43 +61,10 @@
 
 /// 验证出生年月日(yyyyMMdd)
 + (BOOL)validateBirthDate:(NSString *)birthDay {
-    // 日
-    int day = [birthDay substringWithRange:NSMakeRange(6, 2)].intValue;
-    if (day < 1 || day > 31) return NO;
-    
-    // 月
-    int month = [birthDay substringWithRange:NSMakeRange(4, 2)].intValue;
-    if (month < 1 || month > 12) return NO;
-    
-    // 年
-    int year = [birthDay substringToIndex:4].intValue;
-    NSDate *nowDate = [NSDate date];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.dateFormat = @"yyyy";
-    int nowYear = [dateFormatter stringFromDate:nowDate].intValue;
-    if (nowYear < year) return NO;
-    
-    // 年月日综合
-    // 是否闰年
-    BOOL isLongerYear = (year % 400 == 0) || (year % 100 != 0 && year % 4 == 0);
-    switch (month) {
-        case 4:
-        case 6:
-        case 9:
-        case 11:
-            if (day > 30) return NO;
-            break;
-        case 2:
-            if (isLongerYear) {
-                if (day > 29) return NO;
-            } else {
-                if (day > 28) return NO;
-            }
-            break;
-        default:
-            return YES;
-    }
-    return YES;
+    dateFormatter.dateFormat = @"yyyyMMdd";
+    NSDate *date = [dateFormatter dateFromString:birthDay];
+    return date != nil;
 }
 
 @end
