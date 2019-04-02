@@ -1,4 +1,7 @@
 # IDCardNumber-Validation
+
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
+
 An Objective-C & Swift implementation to (check) validate Chinese ID Card No. 身份证号码验证。
 
 ### Reference:
