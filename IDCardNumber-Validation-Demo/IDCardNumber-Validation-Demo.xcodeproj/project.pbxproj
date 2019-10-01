@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		040AA2CF1C814F8700D4B221 /* NSString+IDCardNumberValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 040AA2CE1C814F8700D4B221 /* NSString+IDCardNumberValidator.m */; };
 		04A7BFC21C8060B800A24D71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A7BFC11C8060B800A24D71 /* main.m */; };
-		04A7BFCA1C80610E00A24D71 /* IDCardNumberValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A7BFC91C80610E00A24D71 /* IDCardNumberValidator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +28,6 @@
 		040AA2CE1C814F8700D4B221 /* NSString+IDCardNumberValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IDCardNumberValidator.m"; sourceTree = "<group>"; };
 		04A7BFBE1C8060B800A24D71 /* IDCardNumber-Validation-Demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "IDCardNumber-Validation-Demo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A7BFC11C8060B800A24D71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		04A7BFC81C80610E00A24D71 /* IDCardNumberValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDCardNumberValidator.h; sourceTree = "<group>"; };
-		04A7BFC91C80610E00A24D71 /* IDCardNumberValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDCardNumberValidator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				04A7BFC11C8060B800A24D71 /* main.m */,
-				04A7BFC81C80610E00A24D71 /* IDCardNumberValidator.h */,
-				04A7BFC91C80610E00A24D71 /* IDCardNumberValidator.m */,
 				040AA2CD1C814F8700D4B221 /* NSString+IDCardNumberValidator.h */,
 				040AA2CE1C814F8700D4B221 /* NSString+IDCardNumberValidator.m */,
 			);
@@ -111,6 +106,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 04A7BFB51C8060B800A24D71;
@@ -129,7 +125,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				040AA2CF1C814F8700D4B221 /* NSString+IDCardNumberValidator.m in Sources */,
-				04A7BFCA1C80610E00A24D71 /* IDCardNumberValidator.m in Sources */,
 				04A7BFC21C8060B800A24D71 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
