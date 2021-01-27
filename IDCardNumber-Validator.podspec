@@ -24,9 +24,9 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "An Objective-C & Swift implementation to (check) validate Chinese ID Card No. 身份证号码验证。"
+  spec.description  = "An Objective-C & Swift implementation to validate Chinese ID Card No. 身份证号码验证。"
 
-  spec.homepage     = "https://github.com/qmint/IDCardNumber-Validator"
+  spec.homepage     = "https://github.com/benjamin-wen/IDCardNumber-Validator"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -50,7 +50,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = "Mint"
+  spec.author             = "Benjamin Wen"
   # Or just: spec.author    = "Mint"
   # spec.authors            = { "Mint" => "email@address.com" }
   # spec.social_media_url   = "https://twitter.com/Mint"
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/qmint/IDCardNumber-Validator.git", :tag => "1.0.0" }
+  spec.source       = { :git => "https://github.com/benjamin-wen/IDCardNumber-Validator.git", :tag => "1.0.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
