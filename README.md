@@ -3,7 +3,7 @@
 
 
 [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
-[![pod](https://img.shields.io/cocoapods/v/IDCardNumber-Validator.svg?style=flat)](https://github.com/qmint/IDCardNumber-Validator)
+[![pod](https://img.shields.io/cocoapods/v/IDCardNumber-Validator.svg?style=flat)](https://cocoapods.org/pods/IDCardNumber-Validator)
 
   
 An Objective-C & Swift implementation to (check) validate Chinese ID Card No. 身份证号码验证。
